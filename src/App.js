@@ -9,7 +9,6 @@ import Button from './components/Button'
 import Footer from './components/Footer';
 import axios from 'axios'
 class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
-   
   state = { 
     show: false,
     login: '',
@@ -47,7 +46,6 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
         } else {
           this.setState({success: false, message: 'Incorrect login or password :('})
         }
-
         this.setState({checked: true});
       })
       .catch(err => console.log(`Error occured: ${err}`));
@@ -61,16 +59,13 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
           <input type="text" placeholder="Login" name="login" onChange={this.handleChangeLogin} className="modal__input"/>
           <input type="text" placeholder="Password" name="password" onChange={this.handleChangePassword} className="modal__input"/>
           <Button name="Log in" type="submit" onClick={this.handleSubmit}/>
-
-          
           {
             this.state.checked ?
             <div>
-               <p> {this.state.message}</p>
+              <p> {this.state.message}</p>
             </div>
             : null
           }
-          
         </Modal>
         <Footer />
       </div>

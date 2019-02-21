@@ -2,7 +2,6 @@ import React from 'react';
 import Button from './Button'
 const Modal = ({ show, children, showMsg }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
-  const showHideMsg = showMsg ? "modal display-block" : "modal display-none";
 
   return (
     <div className={showHideClassName}>

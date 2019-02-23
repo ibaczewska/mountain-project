@@ -62,6 +62,7 @@ class App extends React.Component {
         <Header name="Enter the gates" onButtonClick={this.showModal} />
         <Modal show={this.state.show} handleClose={this.hideModal}>
           <input
+            value={this.state.login}
             type="text"
             placeholder="Login"
             name="login"
@@ -69,6 +70,7 @@ class App extends React.Component {
             className="modal__input"
           />
           <input
+            value={this.state.password}
             type="text"
             placeholder="Password"
             name="password"

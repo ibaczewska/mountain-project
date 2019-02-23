@@ -1,23 +1,28 @@
-import React from 'react';
+import React from "react"
 
 class Footer extends React.Component {
-  render(){
+  render() {
     return (
-      <div className="footer">
+      <footer className="footer">
         <div className="footer__copyright">
           <span>&copy; 2019 mountain kingdom</span>
         </div>
         <div className="footer__links">
-          <a href={'#'} className="footer__link">Cookies</a>
+          <a href={"#"} className="footer__link">
+            Cookies
+          </a>
           <span>|</span>
-          <a href={'#'} className="footer__link">Privacy</a>
+          <a href={"#"} className="footer__link">
+            Privacy
+          </a>
         </div>
         <div className="footer__designer">
-          Design by <span className="footer__designer__author">Wizard of Oz</span>
+          Design by
+          <span className="footer__designer__author">Wizard of Oz</span>
         </div>
-      </div>
+      </footer>
     )
   }
 }
 
-export default Footer;
+export default Footer

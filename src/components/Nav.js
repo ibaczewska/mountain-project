@@ -1,26 +1,15 @@
 import React from "react"
 import logo from "../assets/logo.png"
+import Link from "./Link"
 
-class Nav extends React.Component {
-  render() {
-    return (
-      <nav className="nav">
-        <a href={"#"} className="nav__link">
-          About
-        </a>
-        <a href={"#"} className="nav__link">
-          Offer
-        </a>
-        <img className="nav__logo" src={logo} alt="logo" />
-        <a href={"#"} className="nav__link">
-          Gallery
-        </a>
-        <a href={"#"} className="nav__link">
-          Contact
-        </a>
-      </nav>
-    )
-  }
-}
+const Nav = props => (
+  <nav className="nav">
+    <Link content="About" className="nav__link" />
+    <Link content="Offer" className="nav__link" />
+    <img className="nav__logo" src={logo} alt="logo" />
+    <Link content="Gallery" className="nav__link" />
+    <Link content="Contact" className="nav__link" />
+  </nav>
+)
 
 export default Nav

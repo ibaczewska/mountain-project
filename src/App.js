@@ -1,10 +1,10 @@
 import { hot } from "react-hot-loader"
 import React, { Component } from "react"
-import ReactDOM from "react-dom"
 import "./styles/theme.sass"
 import Nav from "./components/Nav"
 import Header from "./components/Header"
 import Modal from "./components/Modal"
+import Input from "./components/Input"
 import Button from "./components/Button"
 import Footer from "./components/Footer"
 import axios from "axios"
@@ -61,7 +61,7 @@ class App extends React.Component {
         <Nav />
         <Header name="Enter the gates" onButtonClick={this.showModal} />
         <Modal show={this.state.show} handleClose={this.hideModal}>
-          <input
+          <Input
             value={this.state.login}
             type="text"
             placeholder="Login"
@@ -69,7 +69,7 @@ class App extends React.Component {
             onChange={this.handleChangeLogin}
             className="modal__input"
           />
-          <input
+          <Input
             value={this.state.password}
             type="text"
             placeholder="Password"

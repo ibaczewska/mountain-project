@@ -25,3 +25,19 @@
     line-height: 18px
     @media (max-width: 600px)
       font-size: 10px
+      display: none
+  &__hamburger 
+    display: none
+    cursor: pointer
+    color: #fff
+    padding: 5px
+    text-decoration: none
+    &:hover 
+      background-color: rgba(255,255,255,0.5)
+    @media (max-width: 600px)
+      display: block
+      margin-right: 20px
+      
+.nav.active a
+  display: block
+  

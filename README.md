@@ -1,3 +1,7 @@
+Project which I created to develop my skill in React technology.
+It is a landing page containing the login panel based on the API documentation:
+http://docs.recruitment-api.pyt1.stg.jmr.pl/
+
 Install project dependencies using npm:
 
 ```bash

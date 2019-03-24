@@ -4,10 +4,10 @@ http://docs.recruitment-api.pyt1.stg.jmr.pl/
 
 The correct data to check if app works:
 ```bash
-login: "correct_login@example.com" :thumbsup:
+login: "correct_login@example.com" 👍 
 ```
 ```bash
-password: "C0rr3Ct_P@55w0rd" :thumbsup:
+password: "C0rr3Ct_P@55w0rd" 👍 
 ```
 
 

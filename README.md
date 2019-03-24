@@ -3,8 +3,12 @@ It is a landing page containing the login panel based on the API documentation:
 http://docs.recruitment-api.pyt1.stg.jmr.pl/
 
 The correct data to check if app works:
+```bash
 login: "correct_login@example.com" :thumbsup:
+```
+```bash
 password: "C0rr3Ct_P@55w0rd" :thumbsup:
+```
 
 
 

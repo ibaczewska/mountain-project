@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700);
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  margin: 43px auto 0; }
+  @media (max-width: 1440px) {
+    .nav {
+      width: 45%; } }
+  @media (max-width: 1024px) {
+    .nav {
+      width: 60%; } }
+  @media (max-width: 991px) {
+    .nav {
+      width: 75%; } }
+  @media (max-width: 600px) {
+    .nav {
+      width: 95%;
+      margin: 10px auto; } }
+  .nav__link {
+    font-family: "Josefin Sans";
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 2.6px;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 18px; }
+    @media (max-width: 600px) {
+      .nav__link {
+        font-size: 10px;
+        display: none; } }
+  .nav__hamburger {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none; }
+    .nav__hamburger:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
+    @media (max-width: 600px) {
+      .nav__hamburger {
+        display: block;
+        margin-right: 20px; } }
+
+.nav.active a {
+  display: block; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  min-height: 100vh; }
+  .header__title {
+    font-size: 4.5rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 15.75px;
+    margin-bottom: 13vh; }
+    @media (max-width: 600px) {
+      .header__title {
+        font-size: 3.5rem; } }
+    @media (max-width: 425px) {
+      .header__title {
+        font-size: 2.5rem; } }
+
+.modal {
+  font-family: "Josefin Sans";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); }
+  .modal__main {
+    position: fixed;
+    background: white;
+    width: 35vw;
+    padding: 15px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center; }
+    .modal__main button {
+      padding: 12px;
+      min-width: 20vw;
+      font-size: 0.8rem;
+      margin: 10px 0; }
+      @media (max-width: 600px) {
+        .modal__main button {
+          min-width: 50vw; } }
+    @media (max-width: 600px) {
+      .modal__main {
+        width: 65vw; } }
+  .modal__header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px; }
+  .modal__input {
+    display: block;
+    margin: 25px auto;
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+    width: 20vw; }
+    @media (max-width: 600px) {
+      .modal__input {
+        width: 50vw; } }
+    .modal__input::-webkit-input-placeholder {
+      font-size: 10px;
+      text-align: center; }
+    .modal__input::-ms-input-placeholder {
+      font-size: 10px;
+      text-align: center; }
+    .modal__input::placeholder {
+      font-size: 10px;
+      text-align: center; }
+
+.display-block {
+  display: block; }
+
+.display-none {
+  display: none; }
+
+.button__item {
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  border-radius: 24px;
+  background-color: #ddbe5c;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-image: -webkit-linear-gradient(43deg, rgba(255, 255, 255, 0) 0%, rgba(210, 169, 41, 0.23) 40%, rgba(194, 148, 2, 0.47) 81%, rgba(194, 148, 2, 0.58) 100%);
+  background-image: -o-linear-gradient(43deg, rgba(255, 255, 255, 0) 0%, rgba(210, 169, 41, 0.23) 40%, rgba(194, 148, 2, 0.47) 81%, rgba(194, 148, 2, 0.58) 100%);
+  background-image: linear-gradient(47deg, rgba(255, 255, 255, 0) 0%, rgba(210, 169, 41, 0.23) 40%, rgba(194, 148, 2, 0.47) 81%, rgba(194, 148, 2, 0.58) 100%);
+  padding: 18px 48px 17px 47px;
+  height: auto;
+  color: #ffffff; }
+  .button__item:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #000000;
+  font-family: "Josefin Sans";
+  color: #b7b7b7;
+  font-size: 11px;
+  opacity: 0.7;
+  width: 100%;
+  height: 49px;
+  margin: 0;
+  padding: 0; }
+  @media (max-width: 600px) {
+    .footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 20px 0; } }
+  .footer__copyright {
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    line-height: 18px; }
+    @media (max-width: 600px) {
+      .footer__copyright {
+        padding-bottom: 2px; } }
+  @media (max-width: 600px) {
+    .footer__links {
+      padding-bottom: 6px; } }
+  .footer__link {
+    color: #b7b7b7;
+    text-decoration: none;
+    letter-spacing: 2.2px;
+    margin: 0 20px;
+    font-weight: 400; }
+  .footer__designer {
+    font-weight: 300; }
+    @media (max-width: 600px) {
+      .footer__designer {
+        padding-bottom: 5px; } }
+    .footer__designer__author {
+      font-weight: 600; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lobster', cursive;
+  background: url(background-calm-clouds.png) top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  font-size: 16px; }
+
+
+/*# sourceMappingURL=main.css.map*/

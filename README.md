@@ -2,6 +2,12 @@ Project which I created to develop my skill in React technology.
 It is a landing page containing the login panel based on the API documentation:
 http://docs.recruitment-api.pyt1.stg.jmr.pl/
 
+The correct data to check if app works:
+login: "correct_login@example.com" :thumbsup:
+password: "C0rr3Ct_P@55w0rd" :thumbsup:
+
+
+
 Install project dependencies using npm:
 
 ```bash
